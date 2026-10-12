@@ -2,6 +2,8 @@
 
 A bridge that connects the **WeChat Linux client** to an AI assistant, so the assistant can read group/DM messages and reply inside WeChat.
 
+> **Personal, non-commercial research project.** Not affiliated with, endorsed by, or supported by Tencent or WeChat. Read the [Disclaimer](#disclaimer--免责声明) before using any of this.
+
 ## How it works
 
 ```
@@ -68,6 +70,28 @@ Runtime state goes in `state/` (git-ignored); never commit `*.db`, `*.log`, or s
 
 MIT — see [LICENSE](LICENSE).
 
-## Disclaimer
+## Acknowledgements
 
-This drives the official WeChat Linux client via GUI automation. That violates WeChat's ToS automation clauses — use a throwaway account, expect possible restrictions, and keep reply behavior conservative (rate limits, whitelists, and human-like delays are built in for this reason).
+This project would not exist without the **Muse** agent platform provided by Meta, which runs the reply-generation side of the pipeline. Thanks to the Muse team for making it available.
+
+## Disclaimer / 免责声明
+
+**English**
+
+- **Purpose.** This is a personal, non-commercial project for learning and research on desktop automation and LLM agents. It is published as a technical reference, not as a product or service.
+- **No affiliation.** This project is not affiliated with, authorized, endorsed, or sponsored by Tencent, WeChat, or Meta. "WeChat" and "微信" are trademarks of Tencent; all trademarks belong to their respective owners and are used here only to describe compatibility.
+- **What it does and does not do.** It only operates the official, unmodified WeChat Linux client through ordinary GUI input (as a person would with a keyboard and mouse), and reads the local database of the account that is logged in on the same machine. It does **not** modify, patch, inject into, or decompile the client, does **not** implement or reverse-engineer the WeChat network protocol, and does **not** bypass encryption, payment, or login verification. The one environment tweak it makes is keeping the machine's `machine-id` and hostname stable across VM resets (`ensure-deps.sh`), so a long-running VM is not mistaken for a new device; remove that step if you do not want it.
+- **Terms of service.** Automating the client may violate WeChat's user agreement and platform rules. Accounts used with this project may be warned, restricted, or banned. You alone are responsible for complying with the WeChat Software License and Service Agreement and all applicable laws and regulations in your jurisdiction.
+- **Prohibited uses.** Do not use this project for spam, bulk or unsolicited messaging, marketing, fraud, gambling, impersonation, harassment, scraping or collecting other people's personal information, or any illegal purpose. Only process chats you are a member of, and respect the privacy of other participants — tell your group members that a bot is present.
+- **No warranty.** The software is provided "as is", without warranty of any kind (see [LICENSE](LICENSE)). The authors are not liable for account loss, data loss, or any other damage arising from its use.
+- **Takedown.** If you are a rights holder and believe this repository infringes your rights, please open an issue and it will be addressed promptly, including removal if appropriate.
+
+**中文**
+
+- **用途**：本项目为个人非商业项目，仅用于桌面自动化与 LLM agent 的学习研究，作为技术参考公开，不是产品或服务。
+- **无关联**：本项目与腾讯、微信、Meta 均无任何关联，未获其授权、认可或赞助。"微信""WeChat"为腾讯公司商标，所有商标归各自权利人所有，此处仅用于说明兼容对象。
+- **做什么、不做什么**：本项目只通过普通的键盘鼠标输入操作未经修改的官方微信 Linux 客户端，并读取本机已登录账号的本地数据库；**不**修改、破解、注入或反编译客户端，**不**实现或逆向微信通信协议，**不**绕过加密、支付或登录验证。唯一的环境调整是在虚拟机重置后保持本机 `machine-id` 与主机名不变（`ensure-deps.sh`），避免长期运行的虚拟机被误判为新设备；不需要可自行删除该步骤。
+- **服务协议**：自动化操作客户端可能违反《微信软件许可及服务协议》及相关平台规则，所用账号可能被警告、限制或封禁。使用者须自行遵守该协议及所在地法律法规，并自行承担全部后果。
+- **禁止用途**：严禁用于垃圾信息、群发营销、诈骗、赌博、冒充他人、骚扰、抓取或收集他人个人信息等任何违法违规用途。仅处理你本人所在的聊天，尊重其他成员隐私，并告知群成员有机器人在群内。
+- **不提供担保**：本软件按"原样"提供，不附带任何形式的担保（见 [LICENSE](LICENSE)）。因使用本项目导致的账号、数据或其他任何损失，作者概不负责。
+- **侵权处理**：如权利人认为本仓库侵犯其合法权益，请提交 issue 联系，作者将及时处理，必要时删除相关内容。
