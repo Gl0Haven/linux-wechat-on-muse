@@ -84,7 +84,8 @@ This project would not exist without the **Muse** agent platform provided by Met
 - **Terms of service.** Automating the client may violate WeChat's user agreement and platform rules. Accounts used with this project may be warned, restricted, or banned. You alone are responsible for complying with the WeChat Software License and Service Agreement and all applicable laws and regulations in your jurisdiction.
 - **Prohibited uses.** Do not use this project for spam, bulk or unsolicited messaging, marketing, fraud, gambling, impersonation, harassment, scraping or collecting other people's personal information, or any illegal purpose. Only process chats you are a member of, and respect the privacy of other participants — tell your group members that a bot is present.
 - **No warranty.** The software is provided "as is", without warranty of any kind (see [LICENSE](LICENSE)). The authors are not liable for account loss, data loss, or any other damage arising from its use.
-- **Takedown.** If you are a rights holder and believe this repository infringes your rights, please open an issue and it will be addressed promptly, including removal if appropriate.
+- **Takedown / removal on request.** If Tencent (WeChat) or Meta (Muse), or any other rights holder, considers this repository inappropriate and asks for it to be removed, I will comply promptly and voluntarily — taking the repository private or deleting it — without dispute. Please open an issue or contact the repository owner through GitHub.
+- **Right to change or withdraw.** The author may modify, stop maintaining, or delete this project at any time without notice.
 
 **中文**
 
@@ -94,4 +95,5 @@ This project would not exist without the **Muse** agent platform provided by Met
 - **服务协议**：自动化操作客户端可能违反《微信软件许可及服务协议》及相关平台规则，所用账号可能被警告、限制或封禁。使用者须自行遵守该协议及所在地法律法规，并自行承担全部后果。
 - **禁止用途**：严禁用于垃圾信息、群发营销、诈骗、赌博、冒充他人、骚扰、抓取或收集他人个人信息等任何违法违规用途。仅处理你本人所在的聊天，尊重其他成员隐私，并告知群成员有机器人在群内。
 - **不提供担保**：本软件按"原样"提供，不附带任何形式的担保（见 [LICENSE](LICENSE)）。因使用本项目导致的账号、数据或其他任何损失，作者概不负责。
-- **侵权处理**：如权利人认为本仓库侵犯其合法权益，请提交 issue 联系，作者将及时处理，必要时删除相关内容。
+- **应要求删库**：如腾讯（微信）或 Meta（Muse）及其他权利人认为本仓库不妥并要求删除，作者将及时、主动配合，将仓库转为私有或直接删除，不做争辩。请通过 issue 或 GitHub 联系仓库所有者。
+- **保留变更权利**：作者保留随时修改、停止维护或删除本项目的权利，恕不另行通知。
