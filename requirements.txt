@@ -1,0 +1,5 @@
+# Third-party Python dependencies (stdlib not listed)
+Pillow>=10.0
+python-xlib>=0.33
+feedparser>=6.0
+wxextract>=0.3

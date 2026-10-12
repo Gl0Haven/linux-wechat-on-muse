@@ -1,0 +1,51 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+
+# Runtime databases and state
+*.db
+*.sqlite
+*.db-wal
+*.db-shm
+*-wal
+*-shm
+state/
+
+# Logs
+*.log
+
+# Media / screenshots / user data
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.mp4
+media/
+media_out/
+stickers/
+liveview/
+logboard/
+
+# Secrets
+.env
+*.env
+*passphrase*
+*credential*
+*secret*
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+
+# Private notes (not published)
+_private/
+
+# Saved device identity (ensure-deps.sh)
+*.saved
+
+# Per-member chat style profiles (personal data)
+聊天风格档案-*.md
